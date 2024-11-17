@@ -61,9 +61,6 @@ y_pred = model.predict(x_test)
 print(y_pred)
 print(y_test)
 
-#features = [["TV", "Radio", "Newspaper"]]
-features = np.array([[200, 40, 69]])
-print(model.predict(features))
 
 from sklearn.metrics import mean_absolute_error,mean_squared_error,mean_squared_log_error , r2_score
 
@@ -74,5 +71,8 @@ print('Mean Absolute Error Rate:', mean_absolute_error(y_test, y_pred))
 
 print('Mean Squared Error:', mean_squared_error(y_test, y_pred))
 
-"""After Deploying the model"""
 
+"""After Deploying the model"""
+#features = [["TV", "Radio", "Newspaper"]]
+features = np.array([[200, 40, 69]])
+print(model.predict(features))
